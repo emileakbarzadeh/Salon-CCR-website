@@ -354,8 +354,18 @@ nav {
 
     img {
         max-width: $max-product-image-width;
+        max-width: $max-product-image-width*1.5;
     }
 }
+@media screen and (min-width: $breakpoint) {
+    #painting-image {
+        img {
+            margin-top: 122px;
+            max-width: $max-product-image-width;
+        }
+    }
+}
+
 //product author
 #artist-title {
     text-decoration: none;
@@ -414,6 +424,5 @@ footer {
     footer {
         flex-direction: column;
         font-size: $footerMobileFontSize;
-        box-shadow: 0px 500px 1000px 500px $navBGColour;
     }
 }
