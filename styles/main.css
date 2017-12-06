@@ -1,0 +1,185 @@
+@keyframes fadein {
+  from {
+    opacity: 0; }
+  to {
+    opacity: 1; } }
+/* Firefox < 16 */
+@-moz-keyframes fadein {
+  from {
+    opacity: 0; }
+  to {
+    opacity: 1; } }
+/* Safari, Chrome and Opera > 12.1 */
+@-webkit-keyframes fadein {
+  from {
+    opacity: 0; }
+  to {
+    opacity: 1; } }
+/* Internet Explorer */
+@-ms-keyframes fadein {
+  from {
+    opacity: 0; }
+  to {
+    opacity: 1; } }
+/* Opera < 12.1 */
+@-o-keyframes fadein {
+  from {
+    opacity: 0; }
+  to {
+    opacity: 1; } }
+body {
+  font-family: Calibri;
+  margin: 0 0 0 0;
+  background-color: #EEEEEEEC;
+  -webkit-animation: fadein 1s;
+  /* Safari, Chrome and Opera > 12.1 */
+  -moz-animation: fadein 1s;
+  /* Firefox < 16 */
+  -ms-animation: fadein 1s;
+  /* Internet Explorer */
+  -o-animation: fadein 1s;
+  /* Opera < 12.1 */
+  animation: fadein 1s; }
+
+#nav-menu {
+  list-style-type: none;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #291D67;
+  padding-right: 20px; }
+
+.nav-item {
+  float: right;
+  margin-top: 1.57em;
+  margin-bottom: 1em;
+  margin-right: 20px; }
+  .nav-item a {
+    display: block;
+    color: #CCCCC9;
+    text-align: center;
+    padding: 5px 16px;
+    text-decoration: none;
+    font-size: 1.5em;
+    border: 1px solid #291D67;
+    border-bottom: none;
+    border-top: none; }
+  .nav-item a:hover {
+    transition: ease-in-out 0.5s;
+    border: 1px solid #CCCCC9;
+    -webkit-border-radius: 6px;
+    -moz-border-radius: 6px;
+    -ms-border-radius: 6px;
+    border-radius: 6px;
+    border-bottom: none;
+    border-top: none; }
+
+#nav-logo {
+  float: left;
+  display: block;
+  color: #CCCCC9;
+  text-align: center;
+  padding: 0 0 0 0;
+  padding-left: 20px;
+  text-decoration: none;
+  margin: 0 0 0 0; }
+  #nav-logo h1 {
+    margin: 10px 0 10px 0;
+    font-weight: 100;
+    font-size: 4em; }
+
+#content-wrapper {
+  margin-top: 20px;
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  max-width: 100em; }
+  html[data-browser*="Mobile"] #content-wrapper {
+    flex-wrap: wrap-reverse; }
+
+#painting-info {
+  margin-right: 10px;
+  margin-left: 10px; }
+  #painting-info h3 {
+    font-size: 2em;
+    margin: 0 0 10px 0; }
+
+#details {
+  padding: 10px 10px 10px 10px;
+  margin-right: 20px;
+  border: 1px solid #6D6D6C;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  -ms-border-radius: 4px;
+  border-radius: 4px; }
+  #details h3 {
+    display: inline-block;
+    font-weight: 100;
+    font-size: 1.2em; }
+  #details h4 {
+    display: inline;
+    margin-top: 10px; }
+  #details p {
+    display: inline; }
+
+#painting-image {
+  margin-right: 60px;
+  margin-left: 60px;
+  margin-bottom: 100px; }
+  #painting-image img {
+    max-width: 30em; }
+
+#artist-title {
+  text-decoration: none; }
+  #artist-title section {
+    margin: 20px 60px 40px 60px;
+    border: 1px solid #6D6D6C;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    -ms-border-radius: 4px;
+    border-radius: 4px;
+    border-right: none;
+    border-left: none; }
+  #artist-title h2 {
+    margin: 0 0 10px 0;
+    color: #291D67;
+    font-size: 5em;
+    font-weight: 100;
+    text-align: center; }
+
+#artist-title:hover section {
+  transition: ease-in-out 0.3s;
+  border-color: #CCCCC9; }
+
+footer {
+  background-color: #291D67;
+  margin: 0 0 0 0;
+  padding: 0 0 0 0;
+  padding-top: 20px;
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  color: #CCCCC9; }
+  html[data-browser*="Mobile"] footer {
+    flex-wrap: wrap-reverse; }
+  footer div {
+    margin-right: 60px; }
+
+DETAILS[open] SUMMARY ~ * {
+  animation: sweep .5s ease-in-out; }
+
+@keyframes sweep {
+  0% {
+    opacity: 0;
+    margin-left: -10px; }
+  100% {
+    opacity: 1;
+    margin-left: 0px; } }
+
+/*# sourceMappingURL=main.css.map */
