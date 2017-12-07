@@ -17,7 +17,6 @@ $productMargin: 10px;
 $max-product-image-width: 35em;
 $maxPageWidth: 90em;
 
-
 //navbar
 $content-width: 1000px;
 $breakpoint: 1000px;
@@ -30,14 +29,14 @@ $link-hover-color: #2581DC;
     -ms-border-radius: $radius;
     border-radius: $radius;
 }
+
 @mixin fade-animation($length) {
     -webkit-animation: fadein $length; /* Safari, Chrome and Opera > 12.1 */
-    -moz-animation:  fadein $length; /* Firefox < 16 */
-    -ms-animation:   fadein $length; /* Internet Explorer */
-    -o-animation:    fadein $length; /* Opera < 12.1 */
-    animation:       fadein $length;
+    -moz-animation: fadein $length; /* Firefox < 16 */
+    -ms-animation: fadein $length; /* Internet Explorer */
+    -o-animation: fadein $length; /* Opera < 12.1 */
+    animation: fadein $length;
 }
-
 
 @keyframes fadein {
     from {
@@ -93,8 +92,8 @@ $link-hover-color: #2581DC;
     }
 }
 
-body{
-    font-family: $font-stack; 
+body {
+    font-family: $font-stack;
     margin: 0 0 0 0;
     background-color: #EEEEEC;
     @include fade-animation(1s);
@@ -125,7 +124,6 @@ nav {
                 border-top: none;
                 //border-left: none;
                 //@include border-radius(4px);
-
                 &:hover {
                     transition: ease-in-out 0.5s;
                     border-color: $navTextColour;
@@ -276,7 +274,8 @@ nav {
         color: $navTextColour;
         text-decoration: none;
     }
-    h1{
+
+    h1 {
         margin: 0 0 0 0;
         font-weight: $font-weight-light;
         font-size: 2em;
@@ -285,21 +284,21 @@ nav {
 //Flex for info and img
 #content-wrapper {
     margin-top: 20px;
-    margin-left:auto;
-    margin-right: auto; 
+    margin-left: auto;
+    margin-right: auto;
     display: flex;
     flex-direction: row;
     //align-items: center;
     justify-content: center;
     max-width: $maxPageWidth;
 }
+
 @media screen and (max-width: $breakpoint) {
     #content-wrapper {
         flex-direction: column-reverse;
         align-items: center;
     }
 }
-
 
 //product textbox formatting
 #painting-info {
@@ -321,8 +320,8 @@ nav {
 }
 //expanding details
 #detail {
-    margin-top: 50px;
-    padding: 10px 10px 10px 10px;
+    margin-bottom: 30px;
+    padding: 10px 10px 10px 5px;
     margin-right: 20px;
     border: 1px solid $lineColour;
     @include border-radius(4px);
@@ -357,6 +356,7 @@ nav {
         max-width: $max-product-image-width*1.5;
     }
 }
+
 @media screen and (min-width: $breakpoint) {
     #painting-image {
         img {
@@ -378,16 +378,24 @@ nav {
         border-left: none;
     }
 
-
     h2 {
         margin: 0 0 10px 0;
         color: $headingColour;
         font-size: $pageTitleFontSize;
         font-weight: $font-weight-light;
         text-align: center;
+        text-transform: uppercase;
     }
 }
-
+/*
+@media screen and (min-width: $breakpoint) {
+    #artist-title {
+        h2 {
+            margin-left: 75px;
+        }
+    }
+}
+    */
 #artist-title:hover {
     section {
         transition: ease-in-out 0.3s;
@@ -399,7 +407,6 @@ nav {
 
 //text formatting
 
-
 //footer
 footer {
     background-color: $navBGColour;
@@ -410,7 +417,6 @@ footer {
     margin-right: auto;
     display: flex;
     flex-direction: row;
-
     align-items: center;
     justify-content: center;
     color: $navTextColour;

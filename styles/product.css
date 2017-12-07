@@ -194,8 +194,8 @@ nav {
     font-weight: 100; }
 
 #detail {
-  margin-top: 50px;
-  padding: 10px 10px 10px 10px;
+  margin-bottom: 30px;
+  padding: 10px 10px 10px 5px;
   margin-right: 20px;
   border: 1px solid #6D6D6C;
   -webkit-border-radius: 4px;
@@ -243,8 +243,18 @@ nav {
     color: #291D67;
     font-size: 5em;
     font-weight: 100;
-    text-align: center; }
+    text-align: center;
+    text-transform: uppercase; }
 
+/*
+@media screen and (min-width: $breakpoint) {
+    #artist-title {
+        h2 {
+            margin-left: 75px;
+        }
+    }
+}
+    */
 #artist-title:hover section {
   transition: ease-in-out 0.3s;
   border-color: #CCCCC9; }
