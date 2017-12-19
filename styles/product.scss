@@ -3,9 +3,9 @@ $bgColour: #CCCCC9;
 $navBGColour: #291D67;
 $headingColour: #291D67;
 $lineColour: #6D6D6C;
-$font-stack: Calibri;
-$font-weight-light: 100;
-$font-weight-normal: 400;
+$font-stack: 'Open Sans', sans-serif;
+$font-weight-light: 400;
+$font-weight-normal: 600;
 $headerFontSize: 4em;
 $pageTitleFontSize: 5em;
 $navFontSize: 1.5em;
@@ -22,6 +22,7 @@ $content-width: 91em;
 $breakpoint: 1000px;
 $nav-height: 70px;
 $link-hover-color: #2581DC;
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,600');
 
 @mixin border-radius($radius) {
     -webkit-border-radius: $radius;
