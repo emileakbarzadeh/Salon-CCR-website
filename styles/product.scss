@@ -18,7 +18,7 @@ $max-product-image-width: 35em;
 $maxPageWidth: 90em;
 
 //navbar
-$content-width: 1000px;
+$content-width: 91em;
 $breakpoint: 1000px;
 $nav-height: 70px;
 $link-hover-color: #2581DC;
@@ -318,7 +318,7 @@ nav {
         font-weight: $font-weight-light;
     }
 }
-//expanding details
+//details
 #detail {
     margin-bottom: 30px;
     padding: 10px 10px 10px 5px;
@@ -370,32 +370,50 @@ nav {
 #artist-title {
     text-decoration: none;
 
+    #artist-title-upper {
+        border-top: 1px solid $lineColour;
+        @include border-radius(6px);
+        margin: 20px $productMargin 0 $productMargin;
+        padding-top: 20px;
+    }
+
+    #artist-title-lower {
+        border-bottom: 1px solid $lineColour;
+        @include border-radius(6px);
+        margin: 0 $productMargin 40px $productMargin;
+        padding-top: 20px;
+    }
+
     section {
-        margin: 20px $productMargin*6 40px $productMargin*6;
-        border: 1px solid $lineColour;
-        @include border-radius(10px);
-        border-right: none;
-        border-left: none;
+        margin: 0;
+        display: flex;
+        max-width: $maxPageWidth;
+        margin-left: auto;
+        margin-right: auto;
     }
 
     h2 {
-        margin: 0 0 10px 0;
+        margin: 0 0 0 7px;
         color: $headingColour;
         font-size: $pageTitleFontSize;
         font-weight: $font-weight-light;
-        text-align: center;
+        text-align: left;
         text-transform: uppercase;
     }
 }
-/*
-@media screen and (min-width: $breakpoint) {
+
+@media screen and (max-width: $breakpoint) {
     #artist-title {
+        section {
+            justify-content: center;
+        }
+
         h2 {
-            margin-left: 75px;
+            margin: 0;
         }
     }
 }
-    */
+
 #artist-title:hover {
     section {
         transition: ease-in-out 0.3s;

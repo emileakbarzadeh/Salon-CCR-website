@@ -148,7 +148,7 @@ nav {
   background: #291D67; }
 
 .nav-container {
-  max-width: 1000px;
+  max-width: 91em;
   margin: 0 auto; }
 
 .brand {
@@ -229,32 +229,41 @@ nav {
     max-width: 35em; } }
 #artist-title {
   text-decoration: none; }
+  #artist-title #artist-title-upper {
+    border-top: 1px solid #6D6D6C;
+    -webkit-border-radius: 6px;
+    -moz-border-radius: 6px;
+    -ms-border-radius: 6px;
+    border-radius: 6px;
+    margin: 20px 10px 0 10px;
+    padding-top: 20px; }
+  #artist-title #artist-title-lower {
+    border-bottom: 1px solid #6D6D6C;
+    -webkit-border-radius: 6px;
+    -moz-border-radius: 6px;
+    -ms-border-radius: 6px;
+    border-radius: 6px;
+    margin: 0 10px 40px 10px;
+    padding-top: 20px; }
   #artist-title section {
-    margin: 20px 60px 40px 60px;
-    border: 1px solid #6D6D6C;
-    -webkit-border-radius: 10px;
-    -moz-border-radius: 10px;
-    -ms-border-radius: 10px;
-    border-radius: 10px;
-    border-right: none;
-    border-left: none; }
+    margin: 0;
+    display: flex;
+    max-width: 90em;
+    margin-left: auto;
+    margin-right: auto; }
   #artist-title h2 {
-    margin: 0 0 10px 0;
+    margin: 0 0 0 7px;
     color: #291D67;
     font-size: 5em;
     font-weight: 100;
-    text-align: center;
+    text-align: left;
     text-transform: uppercase; }
 
-/*
-@media screen and (min-width: $breakpoint) {
-    #artist-title {
-        h2 {
-            margin-left: 75px;
-        }
-    }
-}
-    */
+@media screen and (max-width: 1000px) {
+  #artist-title section {
+    justify-content: center; }
+  #artist-title h2 {
+    margin: 0; } }
 #artist-title:hover section {
   transition: ease-in-out 0.3s;
   border-color: #CCCCC9; }
